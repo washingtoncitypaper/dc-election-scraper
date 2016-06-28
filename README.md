@@ -12,6 +12,7 @@ In addition to scraping the number of votes each candidate received in each prec
 - the total number of votes cast in each precinct in each race
 - the total number of votes cast for each candidate in each race
 - the total number of votes cast citywide in each race
+
 This tool does not include "under votes" (ballots where no selection was made in the race) and "over votes" (ballots where too many selections were made in the race, rendering them invalid) in the totals that it calculates. In contrast, the Board of Elections does include under votes and over votes when displaying the percentage of total votes that each candidate received.
 
 The scraper stores all the vote numbers in a JavaScript object, along with some metadata. When the scrape completes, the object is written to a JSON file in the `public` directory and also to a JSON file with a unique name in the `log` directory.
